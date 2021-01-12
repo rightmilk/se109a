@@ -15,7 +15,29 @@
 ```
 git clone <url>  ##複製一份專案到本地端
 git add -A
-git commit -m " "
+git commit -m "<pattern>"
 git push origin  ##將檔案推回至github
 git pull  ##將檔案從github拉出
+```
+### 操作分支
+```
+git branch  ##顯示分支清單
+git branch <branchname>  ##建立分支
+git branch -m <oldbranch> <newbranch>  ##修改分支名稱
+git branch -d <branchname>  ##刪除分支
+git checkout <branch>  ##切換分支
+git merge <branch>  ##合併分支
+git rebase -i <commit>
+git commit --amend
+git rebase --continue  ##修改過去的提交記錄
+git log --grep "<pattern>" ##尋找包含特定註解的提交
+```
+### 操作提交紀錄
+```
+git commit --amend  ##修改最近的提交紀錄
+git commit --amend  ##只修改最近的提交記錄的註解
+
+```
+### 基礎指令
+```
 ```
