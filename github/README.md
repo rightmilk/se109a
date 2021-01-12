@@ -11,6 +11,11 @@
 如下圖，提交是以時間順序排列狀態被儲存到數據庫中的。憑藉該提交和最新的檔案狀態，就可以知道過去的修改記錄以及內容。
 
 ## 指令
+### Git設定
+```
+git config --global user.name <username>
+git config --global user.email <mailaddress>  ##設定用戶名稱電子郵件
+```
 ### 基礎指令
 ```
 git clone <url>  ##複製一份專案到本地端
@@ -27,17 +32,15 @@ git branch -m <oldbranch> <newbranch>  ##修改分支名稱
 git branch -d <branchname>  ##刪除分支
 git checkout <branch>  ##切換分支
 git merge <branch>  ##合併分支
-git rebase -i <commit>
-git commit --amend
-git rebase --continue  ##修改過去的提交記錄
-git log --grep "<pattern>" ##尋找包含特定註解的提交
 ```
 ### 操作提交紀錄
 ```
 git commit --amend  ##修改最近的提交紀錄
 git commit --amend  ##只修改最近的提交記錄的註解
-
+git rebase -i <commit>
+git commit --amend
+git rebase --continue  ##修改過去的提交記錄
+git log --grep "<pattern>" ##尋找包含特定註解的提交
 ```
-### 基礎指令
-```
-```
+## 心得
+透過不同的github教學網站學習，才知道原來有那麼多種git指令，不然以前永遠只會把自己的知道推上去。
